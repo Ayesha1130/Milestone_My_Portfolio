@@ -9,9 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
+        background: "black",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        rubik : ['"Rubik"']
+      }
+
     },
   },
   plugins: [],
