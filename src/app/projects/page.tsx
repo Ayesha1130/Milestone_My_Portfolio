@@ -55,9 +55,9 @@ const Project = () => {
 
     {
       img: "/images/pic5.png ",
-      title: "Static Interactive Resume Builder",
+      title: "Dynamic Resume Builder",
       description: "Using HTML Css And Typescript",
-      link: "https://github.com/Ayesha1130/Hackathons_Milestone_1_2.git",
+      link: "https://resume-builder-wine-iota.vercel.app/",
       aos: {
         "data-aos": "flip-left",
         "data-aos-easing": "ease-out-cubic",
