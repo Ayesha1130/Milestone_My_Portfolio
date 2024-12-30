@@ -9,7 +9,7 @@ const Hero = () => {
     <main className="flex flex-col min-h-screen">
       <div className="flex flex-1 items-center justify-center px-6">
         <div className="flex flex-col md:flex-row items-center  justify-between max-w-7xl w-full">
-          <div className="max-w-lg md:w-1/2 mb-8 md:m-0">
+          <div className="max-w-lg md:w-1/2 mb-8 md:m-0 text-center lg:text-start">
             <h1 className="text-xl md:text-2xl lg:text-3xl font-rubik mb-2">
               Hello I`m
             </h1>

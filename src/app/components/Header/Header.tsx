@@ -12,20 +12,13 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="flex  justify-between h-20 p-4 items-center sticky ">
-      <button title="button" onClick={toggleMenu}>
-        {!isOpen ? (
-          <IoMdMenu size={20} className="md:hidden lg:hidden block " />
-        ) : (
-          <RxCross2 size={20} className="md:hidden lg:hidden block " />
-        )}
-      </button>
+    <header className="flex  justify-between h-20 p-4 items-center sticky font-serif ">
       <Link href="/">
       <img src="/images/logo pic.png" alt="Header Logo" className="rounded-full w-[50px] h-[50px]" />
       </Link>
      
       <nav className="hidden md:flex lg:flex flex-grow justify-end">
-        <ul className="text-xl flex flex-row justify-end gap-14  italic  ">
+        <ul className="text-xl flex flex-row justify-end gap-4   ">
           
       
           
@@ -47,8 +40,8 @@ const Header = () => {
       
      {/* Mobile Menu*/ }
       {isOpen && (
-        <nav className="md:hidden lg:hidden absolute top-20 left-0 w-full">
-          <ul className="flex flex-col font-semibold gap-4 p-4  bg-black   absolute  w-full  rounded-lg shadow-lg ">
+        <nav className="md:hidden lg:hidden absolute top-20 right-0 w-[50%]">
+          <ul className="flex flex-col font-semibold gap-4 p-4  bg-black text-center  h-[100vh]  absolute  w-full  rounded-lg shadow-lg ">
             <li>
               <Link href="/">Home</Link>
             </li>
@@ -67,6 +60,14 @@ const Header = () => {
           </ul>
         </nav>
       )}
+      <button title="button" onClick={toggleMenu}>
+      {!isOpen ? (
+        <IoMdMenu size={20} className="md:hidden lg:hidden block " />
+      ) : (
+        <RxCross2 size={20} className="md:hidden lg:hidden block " />
+      )}
+    </button>
+   
     </header>
   );
 };

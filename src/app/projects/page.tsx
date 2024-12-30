@@ -43,9 +43,9 @@ const Project = () => {
 
     {
       img: "/images/pic4.png",
-      title: "Adventure Game",
-      description: "Using TypeScript",
-      link: "https://github.com/Ayesha1130/Adventure_Game_Project.git",
+      title: "Tech Blog",
+      description: "Nextjs Dynamic Routing",
+      link: "https://milestone-03-blog-assignment-ayesha-iqbal.vercel.app/",
       aos: {
         "data-aos": "flip-left",
         "data-aos-easing": "ease-out-cubic",
